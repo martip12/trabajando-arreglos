@@ -33,15 +33,15 @@ function showList(array) {
     const li = document.createElement("li");
     li.appendChild(document.createTextNode(element));
     container.appendChild(li);
+    
   });
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
+    // Escribe tu solución aquí
   const stringArray = strangeArray.filter(element => typeof element === "string");
   
   stringArray.sort();
 
-  console.log(stringArray);
-  // Escribe tu solución aquí
-  // Sugerencia de cómo mostrar el array => showList(strangeArray);
+  showList(stringArray);
 });
